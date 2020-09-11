@@ -1,0 +1,39 @@
+$background-color: #2C3E50;
+$text-color: #D5DBDB;
+$text-color-current: #EB984E;
+$text-color-good: #2ECC71;
+$text-color-bad: #E74C3C;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: 'Poppins', sans-serif;
+
+    h1#timer {
+        margin: 150px auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    p#typing {
+        width: 40%;
+        margin: 0 auto;
+        line-height: 200%;
+        font-size: 22px;
+
+        span#good {
+            color: $text-color-good;
+        }
+
+        span#bad {
+            color: $text-color-bad;
+        }
+
+        span#current {
+            color: $text-color-current;
+            border-bottom: 2px solid $text-color-current;
+        }
+    }
+}
